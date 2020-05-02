@@ -187,3 +187,61 @@
 
         Ans: Line 3 is wrong, because there is no constructor in class C which takes dobule/float as argument.
     ```
+
+    1. What is the output of following  code?
+
+        ```java
+            public class A {
+                boolean x;
+
+                public static void main(String[] args) {
+                    A a = new A();
+                    System.out.println(a.x);
+                }
+            }
+
+            Ans: false
+        ```
+
+    1. How do you create a Date for the current time? How do you display the current time?
+
+        ```
+        Ans: 
+            Date d = new Date(); // Creating object for current time
+            System.out.println(d.toString()); // Printing current date and time
+        ```
+
+    1. How do you create a Point2D? Suppose p1 and p2 are two instances of Point2D?
+        How do you obtain the distance between the two points?
+
+        ```
+        Ans: Point2D p1 = new Point2D(2, 2); // Creating Point2D p1
+		Point2D p2 = new Point2D(5,  5); // Creating Point2D p2
+		System.out.println(p1.distance(p2)); // claculating distance between p1 and p2.
+        ```
+    
+    1.  Which packages contain the classes Date, Random, Point2D, System, and Math?
+
+        ```
+        Ans: Date belongs to java.util.
+            Randome belongs to java.util.
+            Point2D belongs to javafx.geometry.
+            System belongs to java.lang
+            Math belongs to java.lang
+        ```
+    
+1. What is an accessor method? What is a mutator method? What are the naming conventions for accessor methods and mutator methods?
+
+    ```
+     Ans: Accessor method is used to get the values of data fields.
+     Mutator methods is used to change the values of data fields.
+     Accessot methods starts with get.
+     Mutator methods starts with set.
+    ```
+
+1. What are the benefits of data field encapsulation?
+
+```
+Ans:  Protects data and makes the class easy to maintain.
+We can achive data field encapsulation by using private access modifier which will prevent prevent direct modifications of data fields.
+```
